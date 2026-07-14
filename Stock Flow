@@ -1,63 +1,61 @@
-You are a senior Flutter developer specialized in building professional business management applications.
+You are a senior Flutter developer specialized in building professional, user-friendly business applications.
 
-Create a complete, production-ready mobile app called **"StockFlow"** – an Inventory and Cash Flow Management System.
+Develop a clean, intuitive, and production-ready mobile app called **StockFlow** – an Inventory and Cash Flow Management System designed for small business owners and shopkeepers.
 
-### App Goal:
-Build a simple, clean, and highly intuitive mobile app that helps small business owners and shopkeepers easily manage their inventory and cash flow on a daily basis.
+### App Goal
+Create a simple, beautiful, and easy-to-use app that allows users to manage their daily inventory and cash flow without any complexity.
 
-### Core Features (Professional & Easy to Use):
+### MVP Features (Focus on these first):
 
-**1. Dashboard (Home)**
-- Clean overview with key metrics: Total Inventory Value, Current Cash Balance, Today's Profit
-- Quick action buttons (Add Item, Record Sale, Add Expense)
-- Low stock alerts and cash flow warnings
-- Simple monthly trend chart
+**1. Dashboard (Home Screen)**
+- Key metrics: Total Inventory Value, Current Cash Balance, Today’s Profit/Loss
+- Quick action buttons (Add Product, Record Sale, Add Expense)
+- Low stock alerts and cash warnings
+- Simple line chart showing cash flow trend (last 7 or 30 days)
 
 **2. Inventory Management**
-- Add, edit, view, and delete products
-- Fields: Product Name, SKU/Code, Category, Purchase Price, Selling Price, Current Stock, Minimum Stock Level, Description
-- Product image support
-- Barcode scanning support (optional but recommended)
-- Search and filter products
-- Stock adjustment (In / Out)
+- Full CRUD for products: Name, SKU, Category, Purchase Price, Selling Price, Current Stock, Minimum Stock Level, Description, Image
+- Barcode/QR code scanning
+- Stock In / Stock Out adjustments
+- Search, filter, and category view
 
-**3. Cash Flow Management**
-- Record daily transactions: Income (Sales, Others) and Expenses
-- Transaction list with date filter and search
-- Daily, Weekly, and Monthly cash flow summary
-- Simple profit & loss view
+**3. Cash Flow & Transactions**
+- Record Income (Sales, Other Income) and Expenses
+- Transaction history with date and type filters
+- Daily, Weekly, and Monthly summaries
 
 **4. Reports**
 - Inventory Stock Report
-- Cash Flow Report
+- Cash Flow Summary
 - Profit & Loss Statement
-- Export reports as PDF
+- Export reports as PDF and CSV
 
-**5. Easy & Professional Features:**
-- Beautiful, modern, and beginner-friendly UI (Material 3)
-- Offline-first functionality
-- Dark and Light mode
-- Multi-language support ready (English + one more)
-- Simple user login (email/password)
-- Data backup and restore
-- Clear navigation with bottom navigation bar
-- Helpful tooltips and empty state screens
+### Professional & Easy-to-Use Features:
+- Modern Material 3 design with excellent UX
+- Offline-first architecture
+- Light and Dark mode support
+- Bottom navigation bar + Floating Action Button
+- Empty states, loading indicators, and helpful tooltips
+- Responsive and accessible UI
 
 ### Technical Requirements:
-- Use Flutter (latest stable)
-- State management: Riverpod
-- Local database: Drift (or sqflite)
+- Flutter (latest stable version)
+- State Management: Riverpod 2.0+
+- Local Database: Drift (with proper migrations)
+- Navigation: go_router
 - Charts: fl_chart
-- PDF generation: pdf package
-- Clean Architecture pattern
-- Fully null-safe, well-commented, and organized code
-- Responsive design for different phone sizes
+- PDF Export: pdf + path_provider
+- Barcode Scanning: mobile_scanner
+- Image Handling: image_picker + cached_network_image
+- Architecture: Clean Architecture (feature-first structure)
+- Fully null-safe, well-commented, clean, and organized code
 
-Please generate the full project with:
-1. Complete `pubspec.yaml` with all necessary dependencies
-2. Clear project folder structure
-3. Data models (Product, Transaction, Category)
-4. Database setup
-5. Main screens (Dashboard, Inventory, Transactions, Reports)
+### Instructions:
+Build the app incrementally. Start with:
+1. Complete `pubspec.yaml` file with all dependencies and configurations
+2. Recommended project folder structure
+3. Core data models (Product, Transaction, Category)
+4. Drift database setup
+5. Then proceed to implement screens one by one, starting with the Dashboard
 
-Start by providing the `pubspec.yaml` and folder structure, then continue step by step. Focus on making the app very easy to use while maintaining a professional look and feel.
+Prioritize **usability and simplicity** while maintaining a premium, professional feel. Focus on making the app easy for non-technical small business users.
