@@ -19,13 +19,21 @@ Create a simple, beautiful, and easy-to-use app that allows users to manage thei
 - Stock In / Stock Out adjustments
 - Search, filter, and category view
 
-**3. Cash Flow & Transactions**
-- Record Income (Sales, Other Income) and Expenses
-- Transaction history with date and type filters
-- Daily, Weekly, and Monthly summaries
+**3. Cashbook**
+- Complete digital cashbook / ledger
+- Record all cash transactions (Cash In and Cash Out)
+- Daily cashbook summary (Opening Balance, Total In, Total Out, Closing Balance)
+- Transaction history with filters (date, type, category)
+- Support for different payment modes (Cash, Bank Transfer, Mobile Money, etc.)
 
-**4. Reports**
+**4. Cash Flow & Transactions**
+- Record Income (Sales, Other Income) and Expenses
+- Daily, Weekly, and Monthly summaries
+- Profit & Loss view
+
+**5. Reports**
 - Inventory Stock Report
+- Cashbook Report
 - Cash Flow Summary
 - Profit & Loss Statement
 - Export reports as PDF and CSV
@@ -54,7 +62,7 @@ Create a simple, beautiful, and easy-to-use app that allows users to manage thei
 Build the app incrementally. Start with:
 1. Complete `pubspec.yaml` file with all dependencies and configurations
 2. Recommended project folder structure
-3. Core data models (Product, Transaction, Category)
+3. Core data models (Product, Transaction, Category, CashbookEntry)
 4. Drift database setup
 5. Then proceed to implement screens one by one, starting with the Dashboard
 
