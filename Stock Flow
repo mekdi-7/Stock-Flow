@@ -1,69 +1,71 @@
-You are a senior Flutter developer specialized in building professional, user-friendly business applications.
+You are a senior Flutter developer specialized in building professional business management applications.
 
-Develop a clean, intuitive, and production-ready mobile app called **StockFlow** – an Inventory and Cash Flow Management System designed for small business owners and shopkeepers.
+Develop a clean, intuitive, and production-ready mobile app called **StockFlow** – a complete **Cashbook + Inventory Management System** for small business owners, shopkeepers, and field teams.
 
 ### App Goal
-Create a simple, beautiful, and easy-to-use app that allows users to manage their daily inventory and cash flow without any complexity.
+Build a simple, beautiful, and powerful app that combines digital Cashbook with full Inventory Management to help users track cash transactions, control expenses, and manage stock in one place.
 
-### MVP Features (Focus on these first):
+### Authentication
+- Full Login / Register system
+- Email & Password authentication
+- Optional Google Sign-In
+- Forgot Password functionality
+- Secure user sessions
+
+### MVP Features:
 
 **1. Dashboard (Home Screen)**
-- Key metrics: Total Inventory Value, Current Cash Balance, Today’s Profit/Loss
-- Quick action buttons (Add Product, Record Sale, Add Expense)
-- Low stock alerts and cash warnings
-- Simple line chart showing cash flow trend (last 7 or 30 days)
+- Key metrics: Cash Balance, Today’s Cash In/Out, Profit/Loss, Total Inventory Value
+- Low stock alerts + cash flow warnings
+- Quick action buttons (New Cash Entry, Add Product, Record Sale)
+- Simple charts for cash trend and stock overview
 
-**2. Inventory Management**
+**2. Cashbook (Digital Ledger)**
+- Record all cash transactions (Cash In & Cash Out)
+- Daily Cashbook Summary: Opening Balance, Total In, Total Out, Closing Balance
+- Transaction list with filters (date, category, payment mode)
+- Support multiple payment modes (Cash, UPI, Bank Transfer, Mobile Money, etc.)
+- Expense categories and tags
+
+**3. Inventory Management**
 - Full CRUD for products: Name, SKU, Category, Purchase Price, Selling Price, Current Stock, Minimum Stock Level, Description, Image
 - Barcode/QR code scanning
 - Stock In / Stock Out adjustments
-- Search, filter, and category view
+- Search, filter, and low-stock alerts
 
-**3. Cashbook**
-- Complete digital cashbook / ledger
-- Record all cash transactions (Cash In and Cash Out)
-- Daily cashbook summary (Opening Balance, Total In, Total Out, Closing Balance)
-- Transaction history with filters (date, type, category)
-- Support for different payment modes (Cash, Bank Transfer, Mobile Money, etc.)
-
-**4. Cash Flow & Transactions**
-- Record Income (Sales, Other Income) and Expenses
-- Daily, Weekly, and Monthly summaries
-- Profit & Loss view
-
-**5. Reports**
+**4. Reports**
+- Daily/Weekly/Monthly Cashbook Report
 - Inventory Stock Report
-- Cashbook Report
-- Cash Flow Summary
 - Profit & Loss Statement
-- Export reports as PDF and CSV
+- Cash Flow Summary
+- Export as PDF and CSV
 
-### Professional & Easy-to-Use Features:
+### Professional & User-Friendly Features:
 - Modern Material 3 design with excellent UX
-- Offline-first architecture
-- Light and Dark mode support
+- Offline-first support
+- Light and Dark mode
 - Bottom navigation bar + Floating Action Button
 - Empty states, loading indicators, and helpful tooltips
-- Responsive and accessible UI
 
 ### Technical Requirements:
-- Flutter (latest stable version)
+- Flutter (latest stable)
 - State Management: Riverpod 2.0+
-- Local Database: Drift (with proper migrations)
+- Local Database: Drift (with migrations)
+- Authentication: Firebase Auth (or Supabase)
 - Navigation: go_router
 - Charts: fl_chart
-- PDF Export: pdf + path_provider
-- Barcode Scanning: mobile_scanner
-- Image Handling: image_picker + cached_network_image
-- Architecture: Clean Architecture (feature-first structure)
-- Fully null-safe, well-commented, clean, and organized code
+- PDF: pdf + path_provider
+- Barcode: mobile_scanner
+- Images: image_picker + cached_network_image
+- Clean Architecture (feature-first)
+- Fully null-safe, well-commented, organized code
 
 ### Instructions:
-Build the app incrementally. Start with:
-1. Complete `pubspec.yaml` file with all dependencies and configurations
+Build the app incrementally. Start by providing:
+1. Complete `pubspec.yaml` with all dependencies
 2. Recommended project folder structure
-3. Core data models (Product, Transaction, Category, CashbookEntry)
-4. Drift database setup
-5. Then proceed to implement screens one by one, starting with the Dashboard
+3. Core data models (User, Product, CashbookEntry, Transaction, Category)
+4. Authentication setup + Drift database setup
+5. Then proceed screen by screen, starting with Login/Register and Dashboard
 
-Prioritize **usability and simplicity** while maintaining a premium, professional feel. Focus on making the app easy for non-technical small business users.
+Prioritize usability for non-technical small business users while maintaining a professional and secure feel.
