@@ -1,9 +1,13 @@
 You are a senior Flutter developer specialized in building professional business management applications.
 
-Develop a clean, intuitive, and production-ready mobile app called **StockFlow** – a complete **Cashbook + Inventory Management System** for small business owners, shopkeepers, and field teams.
+Develop a clean, intuitive, and production-ready mobile app called **StockFlow** – a complete **Cashbook + Inventory Management System** for small business owners, shopkeepers, and field teams in Ethiopia.
 
 ### App Goal
 Build a simple, beautiful, and powerful app that combines digital Cashbook with full Inventory Management to help users track cash transactions, control expenses, and manage stock in one place.
+
+### Currency
+- Use **ETB** (Ethiopian Birr) as the default and only currency throughout the app.
+- Never use $ or USD. Always display prices and amounts with "ETB" (e.g., 1,250.00 ETB).
 
 ### Authentication
 - Full Login / Register system
@@ -15,20 +19,20 @@ Build a simple, beautiful, and powerful app that combines digital Cashbook with 
 ### MVP Features:
 
 **1. Dashboard (Home Screen)**
-- Key metrics: Cash Balance, Today’s Cash In/Out, Profit/Loss, Total Inventory Value
+- Key metrics: Cash Balance, Today’s Cash In/Out, Profit/Loss, Total Inventory Value (in ETB)
 - Low stock alerts + cash flow warnings
 - Quick action buttons (New Cash Entry, Add Product, Record Sale)
 - Simple charts for cash trend and stock overview
 
 **2. Cashbook (Digital Ledger)**
 - Record all cash transactions (Cash In & Cash Out)
-- Daily Cashbook Summary: Opening Balance, Total In, Total Out, Closing Balance
+- Daily Cashbook Summary: Opening Balance, Total In, Total Out, Closing Balance (all in ETB)
 - Transaction list with filters (date, category, payment mode)
 - Support multiple payment modes (Cash, UPI, Bank Transfer, Mobile Money, etc.)
 - Expense categories and tags
 
 **3. Inventory Management**
-- Full CRUD for products: Name, SKU, Category, Purchase Price, Selling Price, Current Stock, Minimum Stock Level, Description, Image
+- Full CRUD for products: Name, SKU, Category, Purchase Price (ETB), Selling Price (ETB), Current Stock, Minimum Stock Level, Description, Image
 - Barcode/QR code scanning
 - Stock In / Stock Out adjustments
 - Search, filter, and low-stock alerts
@@ -38,7 +42,7 @@ Build a simple, beautiful, and powerful app that combines digital Cashbook with 
 - Inventory Stock Report
 - Profit & Loss Statement
 - Cash Flow Summary
-- Export as PDF and CSV
+- Export as PDF and CSV (all amounts in ETB)
 
 ### Professional & User-Friendly Features:
 - Modern Material 3 design with excellent UX
@@ -68,4 +72,4 @@ Build the app incrementally. Start by providing:
 4. Authentication setup + Drift database setup
 5. Then proceed screen by screen, starting with Login/Register and Dashboard
 
-Prioritize usability for non-technical small business users while maintaining a professional and secure feel.
+Make sure all prices, balances, and reports use **ETB** only. Prioritize usability for non-technical small business users.
